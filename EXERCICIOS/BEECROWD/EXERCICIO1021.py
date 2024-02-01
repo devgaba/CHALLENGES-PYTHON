@@ -28,21 +28,19 @@ numero -= moedasCinc*0.05
 cent = numero//0.01
 numero -= cent*0.01
 
-print('NOTAS:\n'
-    '{:.0f} nota (s) de R$ 100.00\n'.format(notasCem),
-    '{:.0f} nota (s) de R$ 50.00\n'.format(notasCinq),
-    '{:.0f} nota (s) de R$ 20.00\n'.format(notasVinte),
-    '{:.0f} nota (s) de R$ 10.00\n'.format(notasDez),
-    '{:.0f} nota (s) de R$ 5.00\n'.format(notasCinc),
-    '{:.0f} nota (s) de R$ 2.00\n'.format(notasDois)
-      )
-print('MOEDAS:\n'
-      '{:.0f} moeda (s) de R$ 1.00\n'.format(notasUm),
-      '{:.0f} moeda (s) de R$ 0.50\n'.format(moedasCinq),
-      '{:.0f} moeda (s) de R$ 0.25\n'.format(moedasVin),
-      '{:.0f} moeda (s) de R$ 0.10\n'.format(moedasDez),
-      '{:.0f} moeda (s) de R$ 0.05\n'.format(moedasCinc),
-      '{:.0f} moeda (s) de R$ 0.01\n'.format(cent)
-      )
+print('NOTAS:')
+print('{:.0f} nota (s) de R$ 100.00'.format(notasCem))
+print('{:.0f} nota (s) de R$ 50.00'.format(notasCinq))
+print('{:.0f} nota (s) de R$ 20.00'.format(notasVinte))
+print('{:.0f} nota (s) de R$ 10.00'.format(notasDez))
+print('{:.0f} nota (s) de R$ 5.00'.format(notasCinc))
+print('{:.0f} nota (s) de R$ 2.00'.format(notasDois))
+print('MOEDAS:')
+print('{:.0f} moeda (s) de R$ 1.00'.format(notasUm))
+print('{:.0f} moeda (s) de R$ 0.50'.format(moedasCinq))
+print('{:.0f} moeda (s) de R$ 0.25'.format(moedasVin))
+print('{:.0f} moeda (s) de R$ 0.10'.format(moedasDez))
+print('{:.0f} moeda (s) de R$ 0.05'.format(moedasCinc))
+print('{:.0f} moeda (s) de R$ 0.01'.format(cent))
 
 print('{}'.format('='*8),' FIM ','{}'.format('='*8))
