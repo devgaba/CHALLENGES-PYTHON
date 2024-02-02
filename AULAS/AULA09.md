@@ -9,19 +9,40 @@ Esses elementos podem ser acessados, a partir de seu índice, que é o seu menor
 Vale lembrar que na linguagem de programação Python ocorrre a diferenciação entre letras maiúsculas e minúsculas.
 
 
-Vamos utilizar como exemplo `frase = ('Curso em Video')` para podermos entender as funcionalidades
+Vamos utilizar como exemplo    `frase = ('Curso em Video')` para podermos entender as funcionalidades
 
 - Quando queremos imprimir apenas um elemento, indicamos o índice e utilizamos:
 
-    `print(frase[9])`
+        print(frase[9])
 
 Note que o elemento em si, quando contamos os elementos e os espaço, é o elemento 10, entretanto, colocamos 9. Isso se dá pois a contagem dos elementos começou em 0.
 
-- Caso queira comecar a impressão a partir do segundo elemento,o qual possui índice 1, utilizamos:
-
-    `print(frase[1:])`
+- Caso queira comecar a impressão a partir do segundo elemento,o qual possui índice 1, utilizamos: 
+    
+        print(frase[15:])
 
 Entretanto, apesar de, dessa maneira, a impressão ser realizada a partir do elemento de índice 1, não é especificado um elemento de de índice final após o sinal `:`.  
+
+Há uma funcionalidade capaz de fazer uma busca em toda a string.
+
+- Nessa funcionalidade é necessário que coloquemos: 
+
+        print(frase[9:21:2])
+
+Uma peculiaridade dessa funcionalidade é que o valor `2` é a quantidade de elementos que será pulado e não será impresso na saída.
+
+- Caso queira omitir apenas o início da busca e informar apenas o final dela, será necessário utilizar o seguinte código:
+
+        print(frase[:5])
+
+- No caso de haver determinados os índices de início e término que serão utilizados, digite:
+
+        print(frase[9:13])
+
+- Para o caso de indicar apenas o início e a quantidade de elementos que serão pulados, digite:
+
+        print(frase[9::13])
+
 
 |||
 |-|-|
