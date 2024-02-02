@@ -8,8 +8,23 @@ Esses elementos podem ser acessados, a partir de seu índice, que é o seu menor
 > [!IMPORTANT]
 Vale lembrar que na linguagem de programação Python ocorrre a diferenciação entre letras maiúsculas e minúsculas.
 
+
+Vamos utilizar como exemplo `frase = ('Curso em Video')` para podermos entender as funcionalidades
+
+- Quando queremos imprimir apenas um elemento, indicamos o índice e utilizamos:
+
+    `print(frase[9])`
+
+Note que o elemento em si, quando contamos os elementos e os espaço, é o elemento 10, entretanto, colocamos 9. Isso se dá pois a contagem dos elementos começou em 0.
+
+- Caso queira comecar a impressão a partir do segundo elemento,o qual possui índice 1, utilizamos:
+
+    `print(frase[1:])`
+
+Entretanto, apesar de, dessa maneira, a impressão ser realizada a partir do elemento de índice 1, não é especificado um elemento de de índice final após o sinal `:`.  
+
 |||
-|-|-----------------------------|
+|-|-|
 
 ## Análise
 Este tópico vai tratar de assuntos relacionados a análise da string.

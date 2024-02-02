@@ -28,6 +28,7 @@ print(frase.strip()) ##Remove os espaços em branco no início e final da string
 print(frase.rstrip())##Remove espaços à direita da string
 print(frase.lstrip())##Remove espaços à esquerda
 
+
 ##Divisão
 print(texto.split()) ##Divisão dentro da string considerando os espaços entre as palavras
 
