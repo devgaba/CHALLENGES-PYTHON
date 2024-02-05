@@ -93,6 +93,28 @@ Se optar por colocar toda a string em letras maiúsculas utilize o código:
 O mesmo acontece caso queira o texto todo em letras minúsculas, com apenas uma diferença no código. Utilize:
 
         print(fras.lower())
+
+Caso opte por ter apenas o primeiro, considerando a string como um todo, maiúscula, utilize:
+
+        print(frase.capitalize())
+
+Caso queria que seaja feita análise de cada palavra da string e que cada uma delas tenha o primeiro caractere maiúsculo, utilize: 
+
+        print(frase.title())
+
+Para remover os espaços em branco no início e no final da string, utilize: 
+
+        print(frase.strip())
+
+- Há a possibilidade de remover apenas o espaço à direita da string utilizando:
+        
+        print(frase.rstrip())
+
+- Há a possibilidade também de remover apenas o espaço à esquerda da string utilizando:
+
+        print(frase.lstrip())
+
+
 > [!CAUTION]
 Os itens propostos aqui falam apenas de alguns tópicos relacionados à formatação do texto. **NÃO TRATAM DA ESTILIZAÇÃO.**
 
