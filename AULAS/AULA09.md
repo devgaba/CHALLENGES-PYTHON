@@ -94,3 +94,5 @@ Tópicos relacionados a divisão da string.
 |-|-|
 ## Junção
 Trata sobre algumas funcionalidades relacionada a junção.
+
+Inclusão de texto explicativo.
