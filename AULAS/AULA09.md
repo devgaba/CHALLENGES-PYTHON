@@ -107,3 +107,4 @@ Tópicos relacionados a divisão da string.
 Trata sobre algumas funcionalidades relacionada a junção.
 
 Inclusão de texto explicativo.
+Mais texto explicativo.
