@@ -52,8 +52,28 @@ Este tópico vai tratar de assuntos relacionados a análise da string.
 
 Quando precisarmos saber a quantidade de elementos que há em uma string ou fazer uma busca por determinado elementos presente. 
 
-É possível, inclusive, fazer a contagem de elementos juntamente com o fatiamento, algo que foi apresentado no tópico passado.
+Para imprimir o tamanho da string, utilize o código:
+        
+               print(len(frase))
 
+Caso queira que seja impresso o número de vezes que aparece uma letra - tomemos como exemplo a letra 'o' - utilize o código:
+  
+        print(frase.count('o'))
+
+É possível, inclusive, fazer a contagem de elementos juntamente com o fatiamento, algo que foi apresentado no tópico passado. Para isso utilize o comando:
+  
+        print(frase.count('o',0,13))
+
+Para visualizar onde o termo buscado começou utilize o código:
+  
+        print(frase.find('deo'))
+- Caso utilize o código acima e o valor não exista na String, será retornado `-1`, o que indica que o termo não existe. 
+
+Caso queira apenas saber se há o elemento na String, utilize:
+
+        print('Curso' in texto)
+
+        
 > [!CAUTION]
 Apesar de podermos fazer o fatiamento juntamente com a contagem utilizando a funcionalidade presente nesse tópico, as funções, aqui apresentada, **NÃO REALIZAM** fatiamento, são exclusivas para a análise da string. 
 
