@@ -104,4 +104,4 @@ Tópicos relacionados a divisão da string.
 |||
 |-|-|
 ## Junção
-Trata sobre algumas funcionalidades relacionada a junção 
+Trata sobre algumas funcionalidades relacionada a junção.
