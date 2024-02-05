@@ -73,7 +73,7 @@ Caso queira apenas saber se há o elemento na String, utilize:
 
         print('Curso' in texto)
 
-        
+
 > [!CAUTION]
 Apesar de podermos fazer o fatiamento juntamente com a contagem utilizando a funcionalidade presente nesse tópico, as funções, aqui apresentada, **NÃO REALIZAM** fatiamento, são exclusivas para a análise da string. 
 
@@ -82,6 +82,17 @@ Apesar de podermos fazer o fatiamento juntamente com a contagem utilizando a fun
 ## Transformação
 Aqui veremos funcionalidades que dizem respeito à formatação da string desejada.
 
+Caso queira subsitituir um termo em específico, utilize o código: 
+
+        print(frase.replace('python', 'Android'))
+
+Se optar por colocar toda a string em letras maiúsculas utilize o código:
+
+        print(frase.upper())
+
+O mesmo acontece caso queira o texto todo em letras minúsculas, com apenas uma diferença no código. Utilize:
+
+        print(fras.lower())
 > [!CAUTION]
 Os itens propostos aqui falam apenas de alguns tópicos relacionados à formatação do texto. **NÃO TRATAM DA ESTILIZAÇÃO.**
 
