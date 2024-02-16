@@ -52,7 +52,27 @@ Este tópico vai tratar de assuntos relacionados a análise da string.
 
 Quando precisarmos saber a quantidade de elementos que há em uma string ou fazer uma busca por determinado elementos presente. 
 
-É possível, inclusive, fazer a contagem de elementos juntamente com o fatiamento, algo que foi apresentado no tópico passado.
+Para imprimir o tamanho da string, utilize o código:
+        
+               print(len(frase))
+
+Caso queira que seja impresso o número de vezes que aparece uma letra - tomemos como exemplo a letra 'o' - utilize o código:
+  
+        print(frase.count('o'))
+
+É possível, inclusive, fazer a contagem de elementos juntamente com o fatiamento, algo que foi apresentado no tópico passado. Para isso utilize o comando:
+  
+        print(frase.count('o',0,13))
+
+Para visualizar onde o termo buscado começou utilize o código:
+  
+        print(frase.find('deo'))
+- Caso utilize o código acima e o valor não exista na String, será retornado `-1`, o que indica que o termo não existe. 
+
+Caso queira apenas saber se há o elemento na String, utilize:
+
+        print('Curso' in texto)
+
 
 > [!CAUTION]
 Apesar de podermos fazer o fatiamento juntamente com a contagem utilizando a funcionalidade presente nesse tópico, as funções, aqui apresentada, **NÃO REALIZAM** fatiamento, são exclusivas para a análise da string. 
@@ -61,6 +81,39 @@ Apesar de podermos fazer o fatiamento juntamente com a contagem utilizando a fun
 |-|-|
 ## Transformação
 Aqui veremos funcionalidades que dizem respeito à formatação da string desejada.
+
+Caso queira subsitituir um termo em específico, utilize o código: 
+
+        print(frase.replace('python', 'Android'))
+
+Se optar por colocar toda a string em letras maiúsculas utilize o código:
+
+        print(frase.upper())
+
+O mesmo acontece caso queira o texto todo em letras minúsculas, com apenas uma diferença no código. Utilize:
+
+        print(fras.lower())
+
+Caso opte por ter apenas o primeiro, considerando a string como um todo, maiúscula, utilize:
+
+        print(frase.capitalize())
+
+Caso queria que seaja feita análise de cada palavra da string e que cada uma delas tenha o primeiro caractere maiúsculo, utilize: 
+
+        print(frase.title())
+
+Para remover os espaços em branco no início e no final da string, utilize: 
+
+        print(frase.strip())
+
+- Há a possibilidade de remover apenas o espaço à direita da string utilizando:
+        
+        print(frase.rstrip())
+
+- Há a possibilidade também de remover apenas o espaço à esquerda da string utilizando:
+
+        print(frase.lstrip())
+
 
 > [!CAUTION]
 Os itens propostos aqui falam apenas de alguns tópicos relacionados à formatação do texto. **NÃO TRATAM DA ESTILIZAÇÃO.**
@@ -73,4 +126,7 @@ Tópicos relacionados a divisão da string.
 |||
 |-|-|
 ## Junção
-Trata sobre algumas funcionalidades relacionada a junção 
+Trata sobre algumas funcionalidades relacionada a junção.
+
+Inclusão de texto explicativo.
+Mais texto explicativo.
