@@ -2,6 +2,8 @@ package JAVA;
 
 import java.util.Scanner;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+
 public class BEEEX42 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,11 +22,17 @@ public class BEEEX42 {
                     numeros[j] = aux;
 
                 }
-
             }
-            System.out.println(numeros[i]);
+        }
+
+        for (int numero : numeros) {
+            System.out.println(numero);
         }
         System.out.println();
+        System.out.println(n1);
+        System.out.println(n2);
+        System.out.println(n3);
+
         sc.close();
     }
 }
