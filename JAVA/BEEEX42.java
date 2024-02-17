@@ -1,8 +1,5 @@
-package JAVA;
 
 import java.util.Scanner;
-
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
 public class BEEEX42 {
     public static void main(String[] args) {
