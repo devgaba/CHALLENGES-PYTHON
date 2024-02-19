@@ -6,15 +6,15 @@ public class BEEEX44 {
         Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
 
-        double a = entrada.nextDouble();
-        double b = entrada.nextDouble();
+        int a = entrada.nextInt();
+        int b = entrada.nextInt();
 
-        double calc = b % a;
-        double calcDois = a % b;
-        //System.out.printf("%.3f%n", calc);
-        //System.out.printf("%.3f%n", calcDois);
+        int calc = b % a;
+        int calcDois = a % b;
+        // System.out.printf("%.3f%n", calc);
+        // System.out.printf("%.3f%n", calcDois);
 
-        if (calc == 0.00 || calcDois == 0.00) {
+        if (calc == 0 || calcDois == 0) {
             System.out.println("Sao Multiplos");
         } else {
             System.out.println("Nao sao Multiplos");
