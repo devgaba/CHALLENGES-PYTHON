@@ -18,10 +18,17 @@ public class BEEEX46 {
         } else if (horaEntrada > 10 && horaSaida > horaEntrada) {
             int calcHora = horaSaida - horaEntrada;
             System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
+<<<<<<< HEAD
         } else if (horaSaida > 10 && horaEntrada > horaSaida) {
             int calcHora = (dia - horaEntrada) + horaSaida;
             System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
 
+=======
+  } else if (horaSaida > 10 && horaEntrada > horaSaida) {
+            int calcHora = (dia - horaEntrada) + horaSaida;
+            System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
+        }
+>>>>>>> MODULES/LIBRARYS
         entrada.close();
     }
 }
