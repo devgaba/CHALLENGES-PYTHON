@@ -10,9 +10,11 @@ public class BEEEX47 {
         int minutoFinal = entrada.nextInt();
 
         if (horaInicial < horaFinal) {
-            int calcDuracao = horaFinal - horaInicial + 24;
+            int calcDuracao = horaFinal - horaInicial;
             int calcMinuto = minutoFinal - minutoInicial + 60;
             System.out.println("O JOGO DUROU " + calcDuracao + " HORA(S) E " + calcMinuto + " MINUTO(S)");
+        } else if (horaFinal == horaInicial) {
+            System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
         }
 
         entrada.close();
