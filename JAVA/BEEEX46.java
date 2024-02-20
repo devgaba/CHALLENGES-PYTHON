@@ -6,29 +6,16 @@ public class BEEEX46 {
 
         int horaEntrada = entrada.nextInt();
         int horaSaida = entrada.nextInt();
-        int dia = 24;
-        int meioDia = dia / 2;
 
-        if (horaSaida < 10) {
-            int calcHora = (dia - horaEntrada) + horaSaida;
-            System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
-        } else if (horaEntrada <= 10) {
-            int calcHora = (meioDia - horaEntrada) + (horaSaida - meioDia);
-            System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
-        } else if (horaEntrada > 10 && horaSaida > horaEntrada) {
-            int calcHora = horaSaida - horaEntrada;
-            System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
-<<<<<<< HEAD
-        } else if (horaSaida > 10 && horaEntrada > horaSaida) {
-            int calcHora = (dia - horaEntrada) + horaSaida;
-            System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
-
-=======
-  } else if (horaSaida > 10 && horaEntrada > horaSaida) {
-            int calcHora = (dia - horaEntrada) + horaSaida;
-            System.out.println("O JOGO DUROU " + calcHora + " HORA(S)");
+        if (horaEntrada > horaSaida) {
+            int calcDuracao = horaSaida - horaEntrada + 24;
+            System.out.println("O JOGO DUROU " + calcDuracao + " HORA(S)");
+        } else if (horaEntrada == horaSaida) {
+            System.out.println("O JOGO DUROU 24 HORA(S)");
+        } else {
+            int calcDuracao = horaSaida - horaEntrada;
+            System.out.println("O JOGO DUROU " + calcDuracao + " HORA(S)");
         }
->>>>>>> MODULES/LIBRARYS
         entrada.close();
     }
 }
