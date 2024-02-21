@@ -39,6 +39,7 @@ public class BEEEX47 {
             System.out.println("O JOGO DUROU " + calcHora + " HORA(S) E " + calcMin + " MINUTO(S)");
 
         }
+        
         entrada.close();
     }
 }
