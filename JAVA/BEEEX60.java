@@ -5,9 +5,10 @@ public class BEEEX60 {
         Scanner entrada = new Scanner(System.in);
 
         int valorPositivo = 0;
+        int valorDigitado = entrada.nextInt();
+        int[] valores = {};
 
-        for (int i = 0; i < valorDigitado; i++) {
-            int valorDigitado = entrada.nextInt();
+        for (int i=0; valorDigitado , 0) {
             valorPositivo++;
         }
         entrada.close();
