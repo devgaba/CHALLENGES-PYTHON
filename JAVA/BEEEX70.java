@@ -5,16 +5,19 @@ public class BEEEX70 {
         Scanner entrada = new Scanner(System.in);
 
         int valorDigitado = entrada.nextInt();
+        int quant = 6;
 
-        for (int i = 0; i < valorDigitado; i++) {
-            if (valorDigitado % 2 == 0) {
-                valorDigitado += 1;
+        for (int i = 0; i < quant; i++) {
+            if (valorDigitado % 2 != 0) {
                 System.out.println(valorDigitado);
-            } else {
                 valorDigitado += 2;
-                System.out.println(valorDigitado);
+
+            } else {
+                System.out.println(valorDigitado + 1);
+                valorDigitado += 3;
             }
         }
+
         entrada.close();
     }
 }
