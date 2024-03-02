@@ -6,31 +6,16 @@ public class BEEEX94 {
 
         int quantCasos = entrada.nextInt();
         int[] casos = new int[quantCasos];
-        int quantR = 0;
-        int quantS = 0;
-        int quantC = 0;
+        String[] letras = { "C", "R", "S" };
+
         for (int i = 0; i < casos.length; i++) {
-            quantC = entrada.nextInt();
-            quantR = entrada.nextInt();
-            quantS = entrada.nextInt();
+            int quant = entrada.nextInt();
+            char letra = entrada.next().charAt(0);
 
-            /*
-             * if (letra == "C") {
-             * quantC = quant + 0;
-             * } else if (letra == "R") {
-             * quantR = quant + 0;
-             * } else if (letra == "S") {
-             * quantS = quant + 0;
-             * }
-             */
-
-            /*
-             *
-             */
+            entrada.nextLine();
         }
-        System.out.println("Total de coelhos; " + quantC);
-        System.out.println("Total de coelhos; " + quantR);
-        System.out.println("Total de coelhos; " + quantS);
+        for(int i=0; i<letras.length; i++){}
+
         entrada.close();
     }
 }
