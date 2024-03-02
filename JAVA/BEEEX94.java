@@ -6,13 +6,13 @@ public class BEEEX94 {
         Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
 
-        int quantC = 0;
-        int quantR = 0;
-        int quantS = 0;
+        double quantC = 0.00;
+        double quantR = 0.00;
+        double quantS = 0.00;
 
         int quantCasos = entrada.nextInt();
 
-        for(int i=0; i<quantCasos; i++){
+        for (int i = 0; i < quantCasos; i++) {
             int quant = entrada.nextInt();
             String carac = entrada.next();
 
@@ -28,19 +28,17 @@ public class BEEEX94 {
                     break;
             }
         }
-        int somaCasos = quantC + quantR + quantS;
-        double percentC = (quantC*100) / somaCasos;
-        double percentR = (quantR*100) / somaCasos;
-        double percentS =(quantS*100) / somaCasos;
-        System.out.println("Total: " + somaCasos + " cobaias");
-        System.out.println("Total de coelhos: " + quantC);
-        System.out.println("Total de ratos: " + quantR);
-        System.out.println("Total de sapos: " + quantS);
-        System.out.printf("Percentual de coelhos: %.2f%n ", percentC + " %");
-        System.out.printf("Percentual de ratos: %.2f%n", percentR + " %");
-        System.out.printf("Percentual de sapos: %.2f%n", percentS + " %");
-
-        System.out.println(quantCasos);
+        double somaCasos = quantC + quantR + quantS;
+        double percentC = (quantC * 100) / somaCasos;
+        double percentR = (quantR * 100) / somaCasos;
+        double percentS = (quantS * 100) / somaCasos;
+        System.out.printf("Total: %.0f cobaias%n", somaCasos);
+        System.out.printf("Total de coelhos: %.0f%n", quantC);
+        System.out.printf("Total de ratos: %.0f%n", quantR);
+        System.out.printf("Total de sapos: %.0f%n", quantS);
+        System.out.printf("Percentual de coelhos: %.2f %%%n", percentC);
+        System.out.printf("Percentual de ratos: %.2f %%%n", percentR);
+        System.out.printf("Percentual de sapos: %.2f %%%n", percentS);
         entrada.close();
     }
 }
